@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include"Color.h"
 void ScoreLabel::Init(int rank,double time, int x, int y) {
-	fonthandle = CreateFontToHandle("ÉÅÉCÉäÉI", 120, 5, DX_FONTTYPE_ANTIALIASING);
+	fonthandle = CreateFontToHandle("„É°„Ç§„É™„Ç™", 120, 5, DX_FONTTYPE_ANTIALIASING);
 	this->rank = rank;
 	this->time = time;
 	this->x = x;
@@ -11,8 +11,8 @@ void ScoreLabel::Update() {
 	x -= 5;
 }
 void ScoreLabel::Draw() {
-	DrawFormatStringToHandle(x - 240, y, GetColor(0, 255, 255), fonthandle, "%dà ", rank);
-	DrawFormatStringToHandle(x, y, Color::Green(), fonthandle, "%.2fïb", time);
+	DrawFormatStringToHandle(x - 240, y, GetColor(0, 255, 255), fonthandle, "%d‰Ωç", rank);
+	DrawFormatStringToHandle(x, y, Color::Green(), fonthandle, "%.2fÁßí", time);
 }
 void ScoreLabel::End() {
 	DeleteFontToHandle(fonthandle);
