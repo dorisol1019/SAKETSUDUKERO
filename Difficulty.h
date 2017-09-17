@@ -1,10 +1,10 @@
 #pragma once
-//“ïˆÕ“x
+//é›£æ˜“åº¦
 enum class Difficulty
 {
 	easy,
 	normal, 
 	hard,
-	//‚¨‚É
+	//ãŠã«
 	god
 };
