@@ -9,7 +9,7 @@ enum eGameScene{
 	eCountdown,eMainGame
 };
 
-//ƒNƒ‰ƒXéŒ¾
+//ã‚¯ãƒ©ã‚¹å®£è¨€
 class Game:public BaseScene{
 private:
 	Difficulty difficulty;
